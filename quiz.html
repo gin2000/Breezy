@@ -1,0 +1,78 @@
+<html>
+<head>
+<style>
+body {
+width: 100%;
+  height:100%;
+ background-image: url("left.png");
+  background-repeat: no-repeat;
+  background-position: left-side;
+  background-size: cover;
+  }
+  h1{
+  padding: 40px;
+  text-align: center;
+  color:DarkRed;
+  font-family:Gabriola;
+  font-size:50px;
+}
+  
+</style>
+
+
+
+<title> Quiz:</title>
+
+</head>
+
+<h1>Let's start the Quiz:</h1>
+
+
+Check the answer to each multiple-coice question, and click on the "Send Form" button to submit the information.
+
+<form id="frm1" action="formResult.html">
+
+<P >
+1. How many hours did you sleep last night?<BR>
+<input type="radio" id="sleep" value="few">between 1-5<BR>
+<input type="radio" id="sleep" value="averge">between 6-9<BR>
+
+<BR>
+<BR>
+<p>
+
+
+
+<P>2. On a scale of one to 5 how stressed out are you? <BR>
+<input type="radio" id="stress" value= "1">1<BR>
+<input type="radio" id="stress" value="2">2<BR>
+<input type="radio" id="stress" value="3">3<BR>
+<input type="radio" id="stress" value="4">4<BR>
+<input type="radio" id="stress" value="5">5<BR>
+</p>
+
+<BR>
+<BR>
+<P>3. Approximately how much time do you need to finish your homework?<BR>
+<input type="number" id="myNumber" value="0">
+
+<br>
+<br>
+<br>
+<button onclick="myFunction()">submit</button>
+</form>
+
+<script>
+function myFunction() {
+  var erreur="";
+  if (document.getElementById("myNumber").value < 0)){
+  erreur= "Please enter a positive number of hours";}
+
+  var myWindow = window.open("", "MsgWindow", "width=200,height=100");
+  myWindow.document.write( erreur );
+}
+</script>
+
+
+</body>
+</html>

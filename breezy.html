@@ -1,0 +1,184 @@
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+h1{
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+h2{
+font-family: Nunito;
+font-size:70px;
+color:Cyan   ;
+text-align: Center;
+padding: 10px;
+}
+h3{color: Lavender ;
+font-size: 40px;}
+p{color: white;
+font-size: 20px;}
+body{
+  width: 100%;
+  height:100%;
+  position:relative;
+  background-image: url("lovely.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+ 
+}
+.container{
+
+
+
+  height:100%;
+ position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn {
+    margin-top: calc(50% + 25px);
+    position: relative;
+    display: inline-block;
+    width: 277px;
+    height: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration:none;
+    font-family: 'Roboto', sans-serif;
+    font-weight:900;
+    font-size:17px;
+    letter-spacing: 0.045em;
+}
+
+.btn svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btn svg rect {
+    //stroke: #EC0033;
+    stroke-width: 4;
+    stroke-dasharray: 353, 0;
+    stroke-dashoffset: 0;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+.btn span{
+  background: rgb(255,130,130);
+  background: -moz-linear-gradient(left,  rgba(255,130,130,1) 0%, rgba(225,120,237,1) 100%);
+  background: -webkit-linear-gradient(left,  rgba(255,130,130,1) 0%,rgba(225,120,237,1) 100%);
+  background: linear-gradient(to right,  rgba(255,130,130,1) 0%,rgba(225,120,237,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed',GradientType=1 );
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn:hover svg rect {
+    stroke-width: 4;
+    stroke-dasharray: 196, 543;
+    stroke-dashoffset: 437;
+}
+</style>
+</head>
+<body>
+
+
+
+<h1 class="topnav">
+  <a href="index.html">Music station</a>
+  <a href="relax.html">Tips to relax</a>
+  <a href="study.htm">Tips to study</a>
+</h1>
+<div class="container">
+  <a href="quiz.html" class="btn">
+  <svg width="277" height="62">
+    <defs>
+        <linearGradient id="grad1">
+            <stop offset="0%" stop-color="#FF8282"/>
+            <stop offset="100%" stop-color="#E178ED" />
+        </linearGradient>
+    </defs>
+     <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="266" height="50"></rect>
+  </svg>
+ 
+  
+    <span>Take the Quiz</span>
+</a>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<h2> Breezy</h2>
+
+<h3> Description</h3>
+<p> Are you feeling tired? 
+<br>
+ Do you have trouble managing your time for both education and scoializing?
+<br>
+
+Breezy will give you tips on time management and a provide you with a playlist of different music to help you with relaxation and concentration. 
+<br>
+Click on the button above to ake an assesment quiz that will help us find the best music for you and advise on managing your tasks.
+<br>
+Also, free to check the different tips we have for concentration and relaxation.
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+</body>
+</html>

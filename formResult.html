@@ -1,0 +1,34 @@
+<html>
+<h1>Your form has been submitted </h1>
+
+<a href="breezy.html">return to homepage </a>
+
+<script>
+function myout() {
+erreur= "study hard and sleep well";
+  var erreur="";
+  var rep1="";
+  var rep2="";
+  var rep3="";
+   if (document.getElementById("myNumber").value < 0){
+  erreur= "Please enter a positive number of hours";}
+  
+   if (document.getElementById("sleep").value =="few"){rep1="Try to sleep early";}
+  else  {rep1="Looking good! Keep up with an organized sleep schedule";}
+  
+   if (document.getElementById("stress").value =="3";)
+ {rep2=" and try to relax. Drink tea or do yoga. Visit our link on tips to relax and listen to our relaxing music on Music station.";}
+  else{rep2="and preserve a happy atitude";}
+  
+  
+if (document.getElementById("myNumber").value) > 5 )
+  {rep3=" You should start studying now. You can visity our Music Station for a studying playlist";}
+  else{rep3="You can take a break and have fun";} 
+
+
+  var myWindow = window.open("", "Form result", "width=500,height=300");
+  myWindow.document.write("<p>" + myWindow.name + "<br>" + erreur + "<br>" + rep1 + "<br>" + rep2 + "<br>" + rep3 +"</p>");
+  document.getElementById("frm1").submit();
+
+}
+</script>
